@@ -5,9 +5,16 @@ $(document).ready( function() {
 var createDivs = function (grids) {
 	for (var i = 0; i < grids; i++) {
 		for (var j = 0; j < grids; j++) {
-			var grid = '<div id=' + i + '' + j + '>&nbsp;</div>';
+			var grid = '<div id=' + i + '' + j + '></div>';
+			var line = "same";
+			if (j == 0) {
+				line = "change"
+			}
+			console.log(line);
 			$('#container').append(grid);
-			$('#container > div').addClass('grid-class');
+
+			$('#container > div').addClass('grid-class').addClass(line);
 		}
+		
 	}
 }
