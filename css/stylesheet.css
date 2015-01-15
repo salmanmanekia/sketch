@@ -1,6 +1,39 @@
- .grid-class {
- 	float: left;
- 	width: 25px;
+button {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	height: 30px;
+	width: 80px;
+	border: 10px;
+}
+
+
+#container {
+	height: 500px;
+	position: relative;
+}
+
+#grids {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.line {
+	float:left;
+}
+
+.line-br {
+	clear:both;
+}
+
+.grid {
+	width: 25px;
  	height: 25px;
- 	border: 1px dashed black;
- }
+	background-color: #D8D8D8;
+	border: 1px solid #000000;
+}
